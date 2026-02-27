@@ -1,10 +1,15 @@
 .input-area {
   display: flex;
+  flex-direction: column;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   overflow: hidden;
   margin-bottom: 16px;
+}
+
+.input-row {
+  display: flex;
 }
 
 #new-todo {
@@ -30,3 +35,37 @@
 }
 
 .add-btn:hover { background: #5a6fd6; }
+
+/* 优先级选择器 */
+.priority-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px 12px;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.priority-label {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-right: 2px;
+}
+
+.priority-btn {
+  border: 1.5px solid transparent;
+  background: none;
+  padding: 2px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.priority-btn.p-high   { border-color: #fca5a5; color: #ef4444; }
+.priority-btn.p-medium { border-color: #fcd34d; color: #d97706; }
+.priority-btn.p-low    { border-color: #93c5fd; color: #3b82f6; }
+
+.priority-btn.p-high.selected   { background: #fee2e2; }
+.priority-btn.p-medium.selected { background: #fef9c3; }
+.priority-btn.p-low.selected    { background: #dbeafe; }

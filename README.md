@@ -59,6 +59,8 @@ export default tseslint.config({
 
 All demo screenshots are placed in the `/demos` directory.
 
+Version 2.1: Feature: Add priority for each TODO item.
+
 Version 2: Architecture Update: use React + TypeScript + Vite.
 
 Version 1: Single index.html page.

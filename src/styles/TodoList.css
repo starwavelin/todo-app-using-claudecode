@@ -12,6 +12,15 @@
 .todo-item:last-child { border-bottom: none; }
 .todo-item:hover { background: #fafafa; }
 
+/* 优先级颜色 — 左侧色条 + 淡背景 */
+.todo-item.priority-high   { border-left: 4px solid #f87171; background-color: #fff5f5; }
+.todo-item.priority-medium { border-left: 4px solid #fbbf24; background-color: #fffdf0; }
+.todo-item.priority-low    { border-left: 4px solid #60a5fa; background-color: #f0f7ff; }
+
+.todo-item.priority-high:hover   { background-color: #feecec; }
+.todo-item.priority-medium:hover { background-color: #fff8d6; }
+.todo-item.priority-low:hover    { background-color: #e6f2ff; }
+
 /* custom circular checkbox */
 .todo-check {
   appearance: none;

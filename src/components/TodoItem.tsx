@@ -8,7 +8,7 @@ interface TodoItemProps {
 
 export default function TodoItem({ todo, onToggle, onDelete }: TodoItemProps) {
   return (
-    <li className={`todo-item${todo.completed ? ' completed' : ''}`}>
+    <li className={`todo-item priority-${todo.priority}${todo.completed ? ' completed' : ''}`}>
       <input
         type="checkbox"
         className="todo-check"

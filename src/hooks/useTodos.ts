@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { Todo, Filter } from '../types';
+import type { Todo, Filter, Priority } from '../types';
 
 const STORAGE_KEY = 'todos';
 
@@ -19,10 +19,10 @@ export function useTodos() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
   }, [todos]);
 
-  const addTodo = (text: string) => {
+  const addTodo = (text: string, priority: Priority) => {
     const trimmed = text.trim();
     if (!trimmed) return;
-    setTodos(prev => [{ id: Date.now(), text: trimmed, completed: false }, ...prev]);
+    setTodos(prev => [{ id: Date.now(), text: trimmed, completed: false, priority }, ...prev]);
   };
 
   const toggleTodo = (id: number) => {
