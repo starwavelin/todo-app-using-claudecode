@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  font-size: 0.82rem;
+  color: #999;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item-count { min-width: 80px; }
+
+.filters {
+  display: flex;
+  gap: 4px;
+}
+
+.filter-btn {
+  border: 1px solid transparent;
+  background: none;
+  color: #999;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.filter-btn:hover { border-color: #ddd; color: #555; }
+.filter-btn.active { border-color: #667eea; color: #667eea; }
+
+.clear-btn {
+  border: none;
+  background: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 0.82rem;
+  min-width: 100px;
+  text-align: right;
+  transition: color 0.2s;
+}
+
+.clear-btn:hover { color: #e74c3c; }

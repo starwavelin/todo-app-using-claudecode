@@ -1,0 +1,32 @@
+.input-area {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+#new-todo {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 18px 20px;
+  font-size: 1rem;
+  color: #333;
+  background: transparent;
+}
+
+#new-todo::placeholder { color: #bbb; }
+
+.add-btn {
+  border: none;
+  background: #667eea;
+  color: #fff;
+  padding: 0 22px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover { background: #5a6fd6; }
